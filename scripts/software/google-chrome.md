@@ -1,4 +1,4 @@
-### Microsoft VSCode (proprietary)
+### Google Chrome (proprietary)
 
 This guide will instruct how to install Google Chrome from the proprietary repository.
 
