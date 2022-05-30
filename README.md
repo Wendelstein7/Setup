@@ -13,6 +13,7 @@ The content of this repository is aimed to be compatible with general Ubuntu/Deb
 - [Docker Desktop](software/docker.md) (Containerization)
 - [TLP](software/tlp.md) (Laptop power management)
 - [GitHub Desktop](software/github-desktop.md) (Git version control)
+- [nvm](software/nvm.md) (Node.js and npm)
 
 ## Utility
 
