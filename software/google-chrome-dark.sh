@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Script modified and taken from https://github.com/felipecrs/dotfiles
 # Source licensed under MIT License by Felipe Santos (felipecrs)
 
