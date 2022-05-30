@@ -17,3 +17,11 @@ Download the `.deb` file from [its website](https://www.google.com/chrome/) and 
 ```bash
 sudo apt install ./<file>.deb
 ```
+
+#### **Dark Mode**
+
+Google Chrome may not automatically read and adapt to the colour scheme of your desktop environment. To force dark mode, run the included script [dark-mode.sh](dark-mode.sh) to automatically create a GNOME-shortcut to launch Chrome with dark-mode enabled.
+
+```bash
+./dark-mode.sh
+```
