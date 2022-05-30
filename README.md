@@ -12,6 +12,7 @@ The content of this repository is aimed to be compatible with general Ubuntu/Deb
 - [Microsoft VSCode](software/vscode.md) (IDE)
 - [Docker Desktop](software/docker.md) (Containerization)
 - [TLP](software/tlp.md) (Laptop power management)
+- [GitHub Desktop](software/github-desktop.md) (Git version control)
 
 ## Utility
 
