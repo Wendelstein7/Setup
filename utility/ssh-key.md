@@ -1,8 +1,8 @@
-### SSH-Keys
+## SSH-Keys
 
 This guide will instruct how to properly install existing private ssh-keys.
 
-#### **Manually**
+### **Manually**
 
 First, create the required directory:
 

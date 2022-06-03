@@ -19,7 +19,7 @@ if [[ ! ${REPLY} =~ ^[Yy]$ ]]; then
     exit 1
 fi
 
-## Create the shortcut
+# Create the shortcut
 cp -f "${original_shortcut}" "${new_shortcut}"
 line_match="Exec=/usr/bin/google-chrome-stable"
 sed -i "s:${line_match}:${line_match} --enable-features=WebUIDarkMode --force-dark-mode:g" "${new_shortcut}" # The //\//\\/ is used to escape forward slashes

@@ -1,10 +1,10 @@
-### TLP (Power management and saving)
+## TLP (Power management and saving)
 
 <small>Source: https://linrunner.de/tlp/installation/debian.html, https://support.system76.com/articles/battery/</small>
 
 TLP is a feature-rich command line utility for Linux, saving laptop battery power without the need to delve deeper into technical details. TLP’s default settings are already optimized for battery life and implement Powertop’s recommendations out of the box. So you may just install and forget it. Nevertheless TLP is highly customizable to fulfil your specific requirements.
 
-#### **Installation**
+### **Installation**
 
 To install TLP, run this command:
 
@@ -40,7 +40,7 @@ sudo tlp-stat -p # View processor status
 sudo tlp-stat -t # View temperature and fan status
 ```
 
-#### **Configuration**
+### **Configuration**
 
 The configuration file for TLP is located at `/etc/tlp.conf`.
 

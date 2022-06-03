@@ -1,10 +1,10 @@
-### Microsoft VSCode (proprietary)
+## Microsoft VSCode (proprietary)
 
 <small>Source: https://code.visualstudio.com/docs/setup/linux</small>
 
 This guide will instruct how to install Microsoft VSCode from the proprietary repository.
 
-#### **Automatically**
+### **Automatically**
 
 Run the included script [vscode.sh](vscode.sh) to automatically install.
 
@@ -12,7 +12,7 @@ Run the included script [vscode.sh](vscode.sh) to automatically install.
 ./vscode.sh
 ```
 
-#### **Manually**
+### **Manually**
 
 Download the `.deb` file from [its website](https://code.visualstudio.com/docs/?dv=linux64_deb) and install it using `apt`.
 

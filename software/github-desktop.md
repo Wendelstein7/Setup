@@ -1,4 +1,4 @@
-### GitHub Desktop
+## GitHub Desktop
 
 <small>Source: https://github.com/shiftkey/desktop</small>
 
@@ -6,7 +6,7 @@ Focus on what matters instead of fighting with Git. Whether you're new to Git or
 
 Linux is not officially supported; however, there are several community-supported package managers that can be used to install GitHub Desktop. Installers for various Linux distributions can be found on the [shiftkey/desktop](https://github.com/shiftkey/desktop) fork.
 
-#### **Automatically**
+### **Automatically**
 
 Run the included script that adds an unofficial repository to your system's package manager and installs GitHub Desktop.
 
@@ -18,7 +18,7 @@ GitHub Desktop should now be installed and will be kept up-to-date by the packag
 
 _Advice: check back in the future if GitHub officially supports Linux, and if so, update the package manager to install the official version for better security and faster updates._
 
-#### **Manually**
+### **Manually**
 
 First install the GPG certificate:
 

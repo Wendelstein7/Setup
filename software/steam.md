@@ -1,10 +1,10 @@
-### Valve Steam
+## Valve Steam
 
 <small>Source: https://store.steampowered.com/about/</small>
 
 Steam is the ultimate destination for playing, discussing, and creating games.
 
-#### **Installation**
+### **Installation**
 
 Download the latest debian package from Steam and install it:
     

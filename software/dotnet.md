@@ -1,4 +1,4 @@
-### Microsoft .NET SDK
+## Microsoft .NET SDK
 
 <small>Source: https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu, https://docs.microsoft.com/en-us/aspnet/core/security/enforcing-ssl?view=aspnetcore-6.0&tabs=visual-studio#ssl-linux</small>
 
@@ -6,14 +6,14 @@
 
 *Note: The .NET SDK works fine on Ubuntu derived distributions such as POP!_OS_.*
 
-#### **Automatically**
+### **Automatically**
 
 Run the [included script](dotnet.sh) that adds the Microsoft repository to your system's package manager and installs dotnet sdk
 ```bash
 sudo ./dotnet.sh
 ```
 
-#### **Manually**
+### **Manually**
 
 Add the Microsoft repository to the apt package manager:
 ```bash
@@ -40,7 +40,7 @@ Or, to install only the .NET runtime: (alternative)
 sudo apt-get install -y dotnet-runtime-6.0
 ```
 
-#### **Development certificates**
+### **Development certificates**
 
 Should you wish to install development certificates (to run Azure or ASP.NET services on https://localhost), you can do so using the [included script](dotnet-certs.sh):
 ```bash

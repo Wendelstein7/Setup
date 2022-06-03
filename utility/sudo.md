@@ -1,10 +1,10 @@
-### Passwordless sudo
+## Passwordless sudo
 
 <small>Source: https://askubuntu.com/questions/147241/execute-sudo-without-password</small>
 
 This guide will instruct how to set-up passwordless sudo, so that the system will not ask for a password when executing commands as the super user with the `sudo`-command.
 
-#### **Automatically**
+### **Automatically**
 
 Run the included script [sudo.sh](sudo.sh) to automatically set-up passwordless sudo.
 
@@ -12,7 +12,7 @@ Run the included script [sudo.sh](sudo.sh) to automatically set-up passwordless 
 ./sudo.sh
 ```
 
-#### **Manually**
+### **Manually**
 
 To manually enable passwordless sudo, open the `sudoers` file using the following command:
 
