@@ -1,6 +1,6 @@
 ### Microsoft .NET SDK
 
-<small>Source: https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu</small>
+<small>Source: https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu, https://docs.microsoft.com/en-us/aspnet/core/security/enforcing-ssl?view=aspnetcore-6.0&tabs=visual-studio#ssl-linux</small>
 
 .NET is supported on Ubuntu. This article describes how to install.NET on Ubuntu. When an Ubuntu version falls out of support, .NET is no longer supported with that version. Install the SDK (which includes the runtime) if you want to develop .NET apps. Or, if you only need to run apps, install the Runtime. If you're installing the Runtime, we suggest you install the ASP.NET Core Runtime as it includes both .NET and ASP.NET Core runtimes.
 
@@ -8,7 +8,7 @@
 
 #### **Automatically**
 
-Run the included script that adds the Microsoft repository to your system's package manager and installs dotnet sdk
+Run the [included script](dotnet.sh) that adds the Microsoft repository to your system's package manager and installs dotnet sdk
 ```bash
 sudo ./dotnet.sh
 ```
@@ -38,4 +38,11 @@ sudo apt-get install -y aspnetcore-runtime-6.0
 Or, to install only the .NET runtime: (alternative)
 ```bash
 sudo apt-get install -y dotnet-runtime-6.0
+```
+
+#### **Development certificates**
+
+Should you wish to install development certificates (to run Azure or ASP.NET services on https://localhost), you can do so using the [included script](dotnet-certs.sh):
+```bash
+sudo ./dotnet-certs.sh
 ```
