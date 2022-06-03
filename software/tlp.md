@@ -43,25 +43,44 @@ sudo tlp-stat -t # View temperature and fan status
 #### **Configuration**
 
 The configuration file for TLP is located at `/etc/tlp.conf`.
+
+#### **Battery life care**
+
+To extend battery life, you could configure the battery to charge only up to a certain percentage, like 80%. You can do this by adding the following lines to the `/etc/tlp.conf` file:
+
+```conf
+START_CHARGE_THRESH_BAT0=75
+STOP_CHARGE_THRESH_BAT0=80
+```
 To apply battery charging tresholds, run `sudo tlp setcharge` after updating the config file.
 
 #### **Fully charge once shortcut**
 
+Sometimes, you might want to force a fully charged battery, for example when you're leaving for a long trip. With the following instructions you can create a "fully charge once" shortcut in GNOME.
+
 Create `~/.local/share/applications/tlp-fully-charge.desktop` with the following content:
 
-```desktop
+```conf
 [Desktop Entry]
 Type=Application
 Name=Fully Charge Battery
 Comment=Fully charge the battery to 100% now.
 Keywords=battery;charge;charging;full;fully;complete;ac
-Exec=zenity --notification --text="$(sudo tlp fullcharge BAT0 2>&1)"
+Exec=/home/user/.charge.sh
 Icon=battery-full-charged
 ```
 
-And make it executable, and reload the GNOME desktop shortcut database:
+And create `~/.charge.sh` with the following content:
 
 ```bash
+#!/bin/bash
+
+zenity --notification --text="$(sudo tlp fullcharge BAT0 2>&1)"
+```
+Then make both files executable, and reload the GNOME desktop shortcut database:
+
+```bash
+chmod +x ~/.charge.sh
 chmod +x ~/.local/share/applications/tlp-fully-charge.desktop
 update-desktop-database ~/.local/share/applications
 ```
