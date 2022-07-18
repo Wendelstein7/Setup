@@ -21,7 +21,7 @@ sudo tlp start
 Use the following command to check that TLP is enabled and active, and check if `State = enabled` is shown in the output:
 
 ```bash
-sudotlp-stat -s
+sudo tlp-stat -s
 ```
 
 Should TLP require its service to be enabled, it will instruct you on how to do so.
